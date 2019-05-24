@@ -1,0 +1,276 @@
+[*] Updating `https://alpha.de.repo.voidlinux.org/current/musl/x86_64-musl-repodata' ...
+x86_64-musl-repodata: [1767KB 0%] 85MB/s ETA: 00m00s
+x86_64-musl-repodata: [1767KB 83%] 2302KB/s ETA: 00m00s
+x86_64-musl-repodata: 1767KB [avg rate: 2763KB/s]
+[*] Updating `https://alpha.de.repo.voidlinux.org/current/musl/nonfree/x86_64-musl-repodata' ...
+[*] Updating `https://alpha.de.repo.voidlinux.org/current/x86_64-musl-repodata' ...
+[*] Updating `https://alpha.de.repo.voidlinux.org/current/nonfree/x86_64-musl-repodata' ...
+[*] Updating `https://alpha.de.repo.voidlinux.org/current/aarch64/x86_64-musl-repodata' ...
+[*] Updating `https://alpha.de.repo.voidlinux.org/current/musl/x86_64-musl-repodata' ...
+x86_64-musl-repodata: [1767KB 0%] 206MB/s ETA: 00m00s
+x86_64-musl-repodata: [1767KB 24%] 2263KB/s ETA: 00m03s
+x86_64-musl-repodata: 1767KB [avg rate: 9255KB/s]
+[*] Updating `https://alpha.de.repo.voidlinux.org/current/musl/nonfree/x86_64-musl-repodata' ...
+[*] Updating `https://alpha.de.repo.voidlinux.org/current/x86_64-musl-repodata' ...
+[*] Updating `https://alpha.de.repo.voidlinux.org/current/nonfree/x86_64-musl-repodata' ...
+[*] Updating `https://alpha.de.repo.voidlinux.org/current/aarch64/x86_64-musl-repodata' ...
+=> linux5.0-5.0.18_1: removing autodeps, please wait...
+=> linux5.0-5.0.18_1: removing autocrossdeps, please wait...
+=> linux5.0-5.0.18_1: building ...
+   [host] bc-1.07.1_4: found (https://alpha.de.repo.voidlinux.org/current/musl)
+   [host] elfutils-devel-0.176_1: found (https://alpha.de.repo.voidlinux.org/current/musl)
+   [host] flex-2.6.4_3: found (https://alpha.de.repo.voidlinux.org/current/musl)
+   [host] gmp-devel-6.1.2_1: found (https://alpha.de.repo.voidlinux.org/current/musl)
+   [host] kmod-26_3: found (https://alpha.de.repo.voidlinux.org/current/musl)
+   [host] libmpc-devel-1.1.0_2: found (https://alpha.de.repo.voidlinux.org/current/musl)
+   [host] libressl-devel-2.8.3_2: found (https://alpha.de.repo.voidlinux.org/current/musl)
+   [host] perl-5.28.1_1: found (https://alpha.de.repo.voidlinux.org/current/musl)
+   [host] uboot-mkimage-2014.01_5: found (https://alpha.de.repo.voidlinux.org/current/musl)
+=> linux5.0-5.0.18_1: installing host dependency 'bc-1.07.1_4' ...
+=> linux5.0-5.0.18_1: installing host dependency 'elfutils-devel-0.176_1' ...
+=> linux5.0-5.0.18_1: installing host dependency 'flex-2.6.4_3' ...
+=> linux5.0-5.0.18_1: installing host dependency 'gmp-devel-6.1.2_1' ...
+=> linux5.0-5.0.18_1: installing host dependency 'kmod-26_3' ...
+=> linux5.0-5.0.18_1: installing host dependency 'libmpc-devel-1.1.0_2' ...
+=> linux5.0-5.0.18_1: installing host dependency 'libressl-devel-2.8.3_2' ...
+=> linux5.0-5.0.18_1: installing host dependency 'perl-5.28.1_1' ...
+=> linux5.0-5.0.18_1: installing host dependency 'uboot-mkimage-2014.01_5' ...
+=> linux5.0-5.0.18_1: running do-fetch hook: 00-distfiles ...
+=> linux5.0-5.0.18_1: fetching distfile 'linux-5.0.18.tar.xz'...
+looking up cdn.kernel.org
+connecting to cdn.kernel.org:443
+SSL options: 4004
+Peer verification enabled
+Using CA cert path: /etc/ssl/certs
+Verify hostname
+TLSv1.2 connection established using ECDHE-RSA-AES128-GCM-SHA256
+Certificate subject: /C=US/ST=California/L=San Francisco/O=Fastly, Inc./CN=k.ssl.fastly.net
+Certificate issuer: /C=BE/O=GlobalSign nv-sa/CN=GlobalSign Organization Validation CA - SHA256 - G2
+requesting https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.0.18.tar.xz
+linux-5.0.18.tar.xz: [100MB 0%] 688KB/s ETA: 00m00s
+linux-5.0.18.tar.xz: [100MB 4%] 7026KB/s ETA: 00m21s
+linux-5.0.18.tar.xz: [100MB 10%] 6646KB/s ETA: 00m16s
+linux-5.0.18.tar.xz: [100MB 18%] 7098KB/s ETA: 00m13s
+linux-5.0.18.tar.xz: [100MB 24%] 6814KB/s ETA: 00m12s
+linux-5.0.18.tar.xz: [100MB 28%] 6291KB/s ETA: 00m12s
+linux-5.0.18.tar.xz: [100MB 34%] 6370KB/s ETA: 00m11s
+linux-5.0.18.tar.xz: [100MB 42%] 6531KB/s ETA: 00m09s
+linux-5.0.18.tar.xz: [100MB 49%] 6673KB/s ETA: 00m08s
+linux-5.0.18.tar.xz: [100MB 58%] 6915KB/s ETA: 00m06s
+linux-5.0.18.tar.xz: [100MB 65%] 6946KB/s ETA: 00m05s
+linux-5.0.18.tar.xz: [100MB 72%] 7010KB/s ETA: 00m04s
+linux-5.0.18.tar.xz: [100MB 79%] 7000KB/s ETA: 00m03s
+linux-5.0.18.tar.xz: [100MB 86%] 6996KB/s ETA: 00m02s
+linux-5.0.18.tar.xz: [100MB 94%] 7097KB/s ETA: 00m00s
+linux-5.0.18.tar.xz: 100MB [avg rate: 7535KB/s]
+=> linux5.0-5.0.18_1: verifying checksum for distfile 'linux-5.0.18.tar.xz'... OK.
+=> linux5.0-5.0.18_1: running do-extract hook: 00-distfiles ...
+=> linux5.0-5.0.18_1: extracting distfile(s), please wait...
+=> linux5.0-5.0.18_1: running do-patch hook: 00-patches ...
+=> linux5.0-5.0.18_1: patching: 0001-surface-acpi.patch.
+=> linux5.0-5.0.18_1: patching: 0002-suspend.patch.
+=> linux5.0-5.0.18_1: patching: 0003-buttons.patch.
+=> linux5.0-5.0.18_1: patching: 0004-cameras.patch.
+=> linux5.0-5.0.18_1: patching: 0005-ipts.patch.
+=> linux5.0-5.0.18_1: patching: 0006-hid.patch.
+=> linux5.0-5.0.18_1: patching: 0007-sdcard-reader.patch.
+=> linux5.0-5.0.18_1: patching: 0008-wifi.patch.
+=> linux5.0-5.0.18_1: patching: 0009-surface-power.patch.
+=> linux5.0-5.0.18_1: patching: 0010-surface-dock.patch.
+=> linux5.0-5.0.18_1: patching: 0011-mwlwifi.patch.
+=> linux5.0-5.0.18_1: patching: 0012-surface-lte.patch.
+=> linux5.0-5.0.18_1: patching: smsc95xx-mac.patch.
+=> linux5.0-5.0.18_1: running pre-configure hook: 00-gnu-configure-asneeded ...
+=> linux5.0-5.0.18_1: running pre-configure hook: 01-override-config ...
+=> linux5.0-5.0.18_1: running pre-configure hook: 02-script-wrapper ...
+=> linux5.0-5.0.18_1: running do_configure ...
+=> Detected a .config file for your arch, using it.
+  HOSTCC  scripts/basic/fixdep
+  HOSTCC  scripts/kconfig/conf.o
+  HOSTCC  scripts/kconfig/confdata.o
+  HOSTCC  scripts/kconfig/expr.o
+  HOSTCC  scripts/kconfig/preprocess.o
+  LEX     scripts/kconfig/zconf.lex.c
+  HOSTCC  scripts/kconfig/symbol.o
+  YACC    scripts/kconfig/zconf.tab.h
+  YACC    scripts/kconfig/zconf.tab.c
+  HOSTCC  scripts/kconfig/zconf.lex.o
+  HOSTCC  scripts/kconfig/zconf.tab.o
+  HOSTLD  scripts/kconfig/conf
+scripts/kconfig/conf  --oldconfig Kconfig
+*
+* Restart config...
+*
+*
+* GCC plugins
+*
+GCC plugins (GCC_PLUGINS) [N/y/?] (NEW) N
+*
+* Character devices
+*
+Enable TTY (TTY) [Y/n/?] y
+  Virtual terminal (VT) [Y/n/?] y
+    Enable character translations in console (CONSOLE_TRANSLATIONS) [Y/n/?] y
+    Support for console on virtual terminal (VT_CONSOLE) [Y/n/?] y
+    Support for binding and unbinding console drivers (VT_HW_CONSOLE_BINDING) [Y/?] y
+  Unix98 PTY support (UNIX98_PTYS) [Y/n/?] y
+  Legacy (BSD) PTY support (LEGACY_PTYS) [Y/n/?] y
+    Maximum number of legacy PTY in use (LEGACY_PTY_COUNT) [0] 0
+  Non-standard serial port support (SERIAL_NONSTANDARD) [Y/n/?] y
+    Comtrol RocketPort support (ROCKETPORT) [M/n/y/?] m
+    Cyclades async mux support (CYCLADES) [M/n/y/?] m
+      Cyclades-Z interrupt mode operation (CYZ_INTR) [N/y/?] n
+    Moxa Intellio support (MOXA_INTELLIO) [M/n/y/?] m
+    Moxa SmartIO support v. 2.0 (MOXA_SMARTIO) [M/n/y/?] m
+    Microgate SyncLink card support (SYNCLINK) [M/n/y/?] m
+    SyncLink Multiport support (SYNCLINKMP) [M/n/y/?] m
+    SyncLink GT/AC support (SYNCLINK_GT) [M/n/y/?] m
+  HSDPA Broadband Wireless Data Card - Globe Trotter (NOZOMI) [M/n/y/?] m
+  Multi-Tech multiport card support (ISI) [M/n/y/?] m
+  HDLC line discipline support (N_HDLC) [M/n/y/?] m
+  GSM MUX line discipline support (EXPERIMENTAL) (N_GSM) [M/n/y/?] m
+  Trace data router for MIPI P1149.7 cJTAG standard (TRACE_ROUTER) [M/n/?] m
+  Trace data sink for MIPI P1149.7 cJTAG standard (TRACE_SINK) [M/n/y/?] m
+  Automatically load TTY Line Disciplines (LDISC_AUTOLOAD) [Y/n/?] (NEW) Y
+/dev/mem virtual device support (DEVMEM) [Y/n/?] y
+/dev/kmem virtual device support (DEVKMEM) [N/y/?] n
+TTY driver to output user messages via printk (TTY_PRINTK) [Y/n/m/?] y
+  ttyprintk log level (1-7) (TTY_PRINTK_LEVEL) [6] 6
+Parallel printer support (PRINTER) [M/n/?] m
+  Support for console on line printer (LP_CONSOLE) [N/y/?] n
+Support for user-space parallel port device drivers (PPDEV) [M/n/?] m
+Xen Hypervisor Console support (HVC_XEN) [Y/n/?] y
+  Xen Hypervisor Multiple Consoles support (HVC_XEN_FRONTEND) [Y/n/?] y
+Virtio console (VIRTIO_CONSOLE) [Y/n/m/?] y
+Generate a panic event to all BMCs on a panic (IPMI_PANIC_EVENT) [N/y/?] n
+Device interface for IPMI (IPMI_DEVICE_INTERFACE) [M/n/?] m
+IPMI System Interface handler (IPMI_SI) [M/?] m
+IPMI SMBus handler (SSIF) (IPMI_SSIF) [M/n/?] m
+IPMI Watchdog Timer (IPMI_WATCHDOG) [M/n/?] m
+IPMI Poweroff (IPMI_POWEROFF) [M/n/?] m
+/dev/nvram support (NVRAM) [M/y/?] m
+Applicom intelligent fieldbus card support (APPLICOM) [M/n/y/?] m
+ACP Modem (Mwave) support (MWAVE) [M/n/y/?] m
+RAW driver (/dev/raw/rawN) (RAW_DRIVER) [M/n/y/?] m
+  Maximum number of RAW devices to support (1-65536) (MAX_RAW_DEVS) [256] 256
+HPET - High Precision Event Timer (HPET) [Y/n/?] y
+  Allow mmap of HPET (HPET_MMAP) [Y/n/?] y
+    Enable HPET MMAP access by default (HPET_MMAP_DEFAULT) [Y/n/?] y
+Hangcheck timer (HANGCHECK_TIMER) [M/n/y/?] m
+Telecom clock driver for ATCA SBC (TELCLOCK) [M/n/y/?] m
+/dev/port character device (DEVPORT) [Y/n/?] y
+Xillybus generic FPGA interface (XILLYBUS) [M/n/y/?] m
+  Xillybus over PCIe (XILLYBUS_PCIE) [M/n/?] m
+#
+# configuration written to .config
+#
+=> linux5.0-5.0.18_1: running pre-build hook: 02-script-wrapper ...
+=> linux5.0-5.0.18_1: running do_build ...
+arch/x86/Makefile:146: CONFIG_X86_X32 enabled but no binutils support
+scripts/kconfig/conf  --syncconfig Kconfig
+arch/x86/Makefile:146: CONFIG_X86_X32 enabled but no binutils support
+  SYSTBL  arch/x86/include/generated/asm/syscalls_32.h
+  SYSHDR  arch/x86/include/generated/asm/unistd_32_ia32.h
+  SYSHDR  arch/x86/include/generated/asm/unistd_64_x32.h
+  SYSTBL  arch/x86/include/generated/asm/syscalls_64.h
+  WRAP    arch/x86/include/generated/uapi/asm/bpf_perf_event.h
+  WRAP    arch/x86/include/generated/uapi/asm/poll.h
+  HYPERCALLS arch/x86/include/generated/asm/xen-hypercalls.h
+  UPD     include/generated/uapi/linux/version.h
+  SYSHDR  arch/x86/include/generated/uapi/asm/unistd_32.h
+  UPD     include/config/kernel.release
+  SYSHDR  arch/x86/include/generated/uapi/asm/unistd_64.h
+  SYSHDR  arch/x86/include/generated/uapi/asm/unistd_x32.h
+  HOSTCC  arch/x86/tools/relocs_32.o
+  WRAP    arch/x86/include/generated/asm/dma-contiguous.h
+  WRAP    arch/x86/include/generated/asm/early_ioremap.h
+  WRAP    arch/x86/include/generated/asm/export.h
+  WRAP    arch/x86/include/generated/asm/mcs_spinlock.h
+  WRAP    arch/x86/include/generated/asm/mm-arch-hooks.h
+  HOSTCC  arch/x86/tools/relocs_64.o
+  HOSTCC  arch/x86/tools/relocs_common.o
+  UPD     include/generated/utsrelease.h
+  HOSTCC  scripts/selinux/genheaders/genheaders
+  DESCEND  objtool
+  HOSTCC   /builddir/linux-5.0.18/tools/objtool/fixdep.o
+  HOSTCC  scripts/selinux/mdp/mdp
+  HOSTCC  scripts/bin2c
+  HOSTLD  arch/x86/tools/relocs
+  HOSTLD   /builddir/linux-5.0.18/tools/objtool/fixdep-in.o
+  LINK     /builddir/linux-5.0.18/tools/objtool/fixdep
+  HOSTCC  scripts/kallsyms
+  GEN      /builddir/linux-5.0.18/tools/objtool/arch/x86/lib/inat-tables.c
+awk: arch/x86/tools/gen-insn-attr-x86.awk:260: warning: regexp escape sequence `\:' is not a known regexp operator
+awk: arch/x86/tools/gen-insn-attr-x86.awk:350: (FILENAME=arch/x86/lib/x86-opcode-map.txt FNR=41) warning: regexp escape sequence `\&' is not a known regexp operator
+  HOSTCC  scripts/conmakehash
+  CC       /builddir/linux-5.0.18/tools/objtool/exec-cmd.o
+  CC       /builddir/linux-5.0.18/tools/objtool/arch/x86/decode.o
+  CC       /builddir/linux-5.0.18/tools/objtool/help.o
+  CC       /builddir/linux-5.0.18/tools/objtool/pager.o
+  HOSTCC  scripts/recordmcount
+  CC       /builddir/linux-5.0.18/tools/objtool/parse-options.o
+  LD       /builddir/linux-5.0.18/tools/objtool/arch/x86/objtool-in.o
+  CC       /builddir/linux-5.0.18/tools/objtool/run-command.o
+  CC       /builddir/linux-5.0.18/tools/objtool/builtin-check.o
+  CC       /builddir/linux-5.0.18/tools/objtool/sigchain.o
+  CC       /builddir/linux-5.0.18/tools/objtool/builtin-orc.o
+  HOSTCC  scripts/sortextable
+  HOSTCC  scripts/asn1_compiler
+  HOSTCC  scripts/sign-file
+  CC       /builddir/linux-5.0.18/tools/objtool/check.o
+  CC       /builddir/linux-5.0.18/tools/objtool/subcmd-config.o
+  HOSTCC  scripts/extract-cert
+  LD       /builddir/linux-5.0.18/tools/objtool/libsubcmd-in.o
+  AR       /builddir/linux-5.0.18/tools/objtool/libsubcmd.a
+  HOSTCC  scripts/insert-sys-cert
+  CC       /builddir/linux-5.0.18/tools/objtool/orc_gen.o
+  CC       /builddir/linux-5.0.18/tools/objtool/orc_dump.o
+  CC       /builddir/linux-5.0.18/tools/objtool/elf.o
+  CC       /builddir/linux-5.0.18/tools/objtool/special.o
+  CC       /builddir/linux-5.0.18/tools/objtool/objtool.o
+  CC       /builddir/linux-5.0.18/tools/objtool/libstring.o
+  CC       /builddir/linux-5.0.18/tools/objtool/str_error_r.o
+  HOSTCC  scripts/mod/mk_elfconfig
+  CC      scripts/mod/devicetable-offsets.s
+  CC      scripts/mod/empty.o
+  MKELF   scripts/mod/elfconfig.h
+  HOSTCC  scripts/mod/modpost.o
+  HOSTCC  scripts/mod/sumversion.o
+  UPD     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+  LD       /builddir/linux-5.0.18/tools/objtool/objtool-in.o
+  LINK     /builddir/linux-5.0.18/tools/objtool/objtool
+  HOSTLD  scripts/mod/modpost
+  CC      kernel/bounds.s
+  UPD     include/generated/timeconst.h
+  UPD     include/generated/bounds.h
+  CC      arch/x86/kernel/asm-offsets.s
+  UPD     include/generated/asm-offsets.h
+  CALL    scripts/checksyscalls.sh
+arch/x86/Makefile:146: CONFIG_X86_X32 enabled but no binutils support
+  DESCEND  objtool
+  CALL    scripts/checksyscalls.sh
+  CC      init/main.o
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/do_mounts.o
+  HOSTCC  usr/gen_init_cpio
+  GEN     usr/initramfs_data.cpio
+  AS      usr/initramfs_data.o
+  AR      usr/built-in.a
+/bin/sh: x86_64-linux-musl-ar: command not found
+make[1]: *** [scripts/Makefile.build:410: usr/built-in.a] Error 127
+make: *** [Makefile:1067: usr] Error 2
+make: *** Waiting for unfinished jobs....
+  CC      init/do_mounts_initrd.o
+  CC      init/do_mounts_md.o
+  CC      init/initramfs.o
+  CC      init/calibrate.o
+  CC      init/init_task.o
+  CC      init/version.o
+  AR      init/built-in.a
+/bin/sh: x86_64-linux-musl-ar: command not found
+make[1]: *** [scripts/Makefile.build:410: init/built-in.a] Error 127
+make: *** [Makefile:1067: init] Error 2
+=> ERROR: linux5.0-5.0.18_1: do_build: 'make ARCH=$arch ${_version} ${_cross} ${makejobs} ${_args}' exited with 2
+=> ERROR:   in do_build() at srcpkgs/linux5.0/template:100
