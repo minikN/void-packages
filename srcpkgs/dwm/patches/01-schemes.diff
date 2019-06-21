@@ -1,0 +1,11 @@
+--- a/dwm.c
++++ b/dwm.c
+@@ -59,7 +59,7 @@
+
+ /* enums */
+ enum { CurNormal, CurResize, CurMove, CurLast }; /* cursor */
+-enum { SchemeNorm, SchemeSel }; /* color schemes */
++enum { SchemeNorm, SchemeSel, SchemeWarn, SchemeUrgent, SchemeTSel, SchemeRed, SchemeGreen, SchemeYellow, SchemeBlue, SchemePurple, SchemeCyan }; /* color schemes */
+ enum { NetSupported, NetWMName, NetWMState, NetWMCheck,
+        NetWMFullscreen, NetActiveWindow, NetWMWindowType,
+        NetWMWindowTypeDialog, NetClientList, NetLast }; /* EWMH atoms */

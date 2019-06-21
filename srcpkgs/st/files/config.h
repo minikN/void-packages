@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "Terminus (TTF):size=12";
+static int borderpx = 10;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -32,7 +32,7 @@ static float chscale = 1.0;
  *
  * More advanced example: L" `'\"()[]{}"
  */
-wchar_t *worddelimiters = L" ";
+char *worddelimiters = " ";
 
 /* selection timeouts (in milliseconds) */
 static unsigned int doubleclicktimeout = 300;
@@ -103,6 +103,7 @@ static const char *colorname[] = {
 	"magenta",
 	"cyan",
 	"white",
+	"white",
 
 	[255] = 0,
 
@@ -150,6 +151,34 @@ static unsigned int mousebg = 0;
  */
 static unsigned int defaultattr = 11;
 
+ResourcePref resources[] = {
+	{ "color00",       STRING,  &colorname[0] },
+	{ "color01",       STRING,  &colorname[1] },
+	{ "color02",       STRING,  &colorname[2] },
+	{ "color03",       STRING,  &colorname[3] },
+	{ "color04",       STRING,  &colorname[4] },
+	{ "color05",       STRING,  &colorname[5] },
+	{ "color06",       STRING,  &colorname[6] },
+	{ "color07",       STRING,  &colorname[7] },
+	{ "color08",       STRING,  &colorname[8] },
+	{ "color09",       STRING,  &colorname[9] },
+	{ "color10",      STRING,  &colorname[10] },
+	{ "color11",      STRING,  &colorname[11] },
+	{ "color12",      STRING,  &colorname[12] },
+	{ "color13",      STRING,  &colorname[13] },
+	{ "color14",      STRING,  &colorname[14] },
+	{ "color15",      STRING,  &colorname[15] },
+	{ "color16",      STRING,  &colorname[16] },
+	{ "color17",      STRING,  &colorname[17] },
+	{ "color18",      STRING,  &colorname[18] },
+	{ "color19",      STRING,  &colorname[19] },
+	{ "color20",      STRING,  &colorname[20] },
+	{ "color21",      STRING,  &colorname[21] },
+	{ "background",   STRING,  &colorname[0] },
+	{ "foreground",   STRING,  &colorname[5] },
+	{ "cursorColor",  STRING,  &colorname[5] },
+};
+
 /*
  * Internal mouse shortcuts.
  * Beware that overloading Button1 will disable the selection.
@@ -170,14 +199,20 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
-	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
-	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+
+	/* Zooming */
+	{ TERMMOD,          	XK_asterisk,    zoom,           {.f = +1} },
+	{ TERMMOD,              XK_underscore,  zoom,           {.f = -1} },
+	{ TERMMOD, 	        XK_apostrophe,  zoomreset,      {.f =  0} },
+
+	/* Scrollback */
+	{ TERMMOD,              XK_Page_Up,     kscrollup,      {.i = -1} },
+	{ TERMMOD,              XK_Page_Down,   kscrolldown,    {.i = -1} },
 };
 
 /*

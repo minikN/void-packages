@@ -9,6 +9,7 @@ license="MIT"
 homepage="http://dwm.suckless.org"
 distfiles="https://dl.suckless.org/dwm/dwm-${version}.tar.gz"
 checksum=97902e2e007aaeaa3c6e3bed1f81785b817b7413947f1db1d3b62b8da4cd110e
+patch_args="-Np1"
 
 do_build() {
 	[ -e ${FILESDIR}/config.h ] && cp ${FILESDIR}/config.h config.h

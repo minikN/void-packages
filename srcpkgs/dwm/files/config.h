@@ -11,24 +11,31 @@ static const char *fonts[]          = {
 				      };
 static const char dmenufont[]    = "Terminus (TTF):size=10";
 
-static const char col_00[]       = "#222222"; 	/* Default Background */
-static const char col_01[]       = "#363537"; 	/* Lighter Background */
-static const char col_02[]       = "#525053"; 	/* Selection Background */
-static const char col_03[]       = "#69676c"; 	/* Comments, Line Highlighting */
-static const char col_04[]       = "#8b888f"; 	/* Dark Foreground */
-static const char col_05[]       = "#f7f1ff"; 	/* Default Foreground */
-static const char col_06[]       = "#"; 	/* Light Forground */
-static const char col_07[]       = "#"; 	/* Light Background */
-static const char col_08[]       = "#"; 	/* Variables, XML-Tags */
-static const char col_09[]       = "#fc618d"; 	/* Red */
-static const char col_0A[]       = "#7bd88f"; 	/* Green */
-static const char col_0B[]       = "#fce566"; 	/* Yellow */
-static const char col_0C[]       = "#fd9353"; 	/* Blue */
-static const char col_0D[]       = "#948ae3"; 	/* Purple */
-static const char col_0E[]       = "#5ad4e6"; 	/* Cyan */
-static const char col_0F[]       = ""; 		/* Accent */
+/* Colors get loaded from Xresources */
+static char col_00[]       = "#000000";
+static char col_01[]       = "#000000";
+static char col_02[]       = "#000000";
+static char col_03[]       = "#000000";
+static char col_04[]       = "#000000";
+static char col_05[]       = "#000000";
+static char col_06[]       = "#000000";
+static char col_07[]       = "#000000";
+static char col_08[]       = "#000000";
+static char col_09[]       = "#000000";
+static char col_0A[]       = "#000000";
+static char col_0B[]       = "#000000";
+static char col_0C[]       = "#000000";
+static char col_0D[]       = "#000000";
+static char col_0E[]       = "#000000";
+static char col_0F[]       = "#000000";
+static char col_16[]       = "#000000";
+static char col_17[]       = "#000000";
+static char col_18[]       = "#000000";
+static char col_19[]       = "#000000";
+static char col_20[]       = "#000000";
+static char col_21[]       = "#000000";
 
-static const char *colors[][3]      = {
+static char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] =	 { col_05, col_00, col_00 },
 	[SchemeSel]  =	 { col_05, col_02, col_02 },
@@ -43,6 +50,9 @@ static const char *colors[][3]      = {
 	[SchemeCyan]=	 { col_0E, col_00, col_00 }, /* Cyan */
 };
 
+/* Xresources file location */
+static const char *xres = "/home/demis/.Xresources";
+
 /* tagging */
 static const char *tags[] = { "", "", "", };
 
@@ -54,6 +64,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Sxiv",     "CapPrev",  NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */
@@ -109,6 +120,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	{ MODKEY,             		XK_F5, 	    xrdb,          {.v = NULL} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)

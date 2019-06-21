@@ -9,13 +9,22 @@ or queried through the `xbps-install(1)` and `xbps-query(1)` utilities, respecti
 
 ### Requirements
 
-- GNU bash
-- xbps >= 0.46
+- GNU bash (included by default with void)
+- xbps >= 0.46 (included by default with void)
+- curl(1) (xbps-src update-check)
+- flock(1) (util-linux) (included by default with void)
+- mktemp(1) (POSIX) (included by default with void)
+- mkfifo(1) (POSIX) (included by default with void)
+- sed(1) (POSIX) (included by default with void)
+- grep(1) (POSIX) (included by default with void)
+- other common POSIX utilities included by default in almost all UNIX systems.
 
 `xbps-src` requires a utility to chroot and bind mount existing directories
 into a `masterdir` that is used as its main `chroot` directory. `xbps-src` supports
 multiple utilities to accomplish this task:
 
+ - `bwrap` - bubblewrap, see https://github.com/projectatomic/bubblewrap.
+ - `ethereal` - only useful for one-shot containers, i.e docker (used with travis).
  - `xbps-uunshare(1)` - XBPS utility that uses `user_namespaces(7)` (part of xbps, default).
  - `xbps-uchroot(1)` - XBPS utility that uses `namespaces` and must be `setgid` (part of xbps).
  - `proot(1)` - utility that implements chroot/bind mounts in user space, see https://proot-me.github.io/.
@@ -139,7 +148,7 @@ The following directory hierarchy is used with a default configuration file:
             |
             |- hostdir
             |  |- binpkgs ...
-            |  |- ccache-<arch> ...
+            |  |- ccache ...
             |  |- distcc-<arch> ...
             |  |- repocache ...
             |  |- sources ...

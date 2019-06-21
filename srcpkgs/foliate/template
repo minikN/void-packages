@@ -1,7 +1,8 @@
 # Template file for 'foliate'
 pkgname=foliate
-version=1.1.1
+version=1.3.0
 revision=1
+archs=noarch
 build_style=meson
 hostmakedepends="pkg-config gjs glib-devel ninja"
 depends="webkit2gtk libsoup gjs"
@@ -10,4 +11,4 @@ maintainer="lorem <notloremipsum@protonmail.com>"
 license="GPL-3.0-or-later"
 homepage="https://johnfactotum.github.io/foliate/"
 distfiles="https://github.com/johnfactotum/${pkgname}/archive/${version}.tar.gz"
-checksum=8adfb7beb0be197c11376ee5e6d927b7c033d603d6b762ad19f5414c5bf876e7
+checksum=800dd610313c934f2708462d6dcf5238ae92909b1ceb27da0d4aea4831285bed
