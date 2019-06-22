@@ -11,8 +11,9 @@ static const char *fonts[]          = {
 				      };
 static const char dmenufont[]    = "Terminus (TTF):size=10";
 
+
 /* Colors get loaded from Xresources */
-static char col_00[]       = "#000000";
+static char col_00[]       = "#555555";
 static char col_01[]       = "#000000";
 static char col_02[]       = "#000000";
 static char col_03[]       = "#000000";
@@ -35,6 +36,14 @@ static char col_19[]       = "#000000";
 static char col_20[]       = "#000000";
 static char col_21[]       = "#000000";
 
+static char *colorname[] = {
+	"#000000"
+};
+
+ResourcePref resources[] = {
+	{ "color00", 	STRING, &colorname[0] }
+};
+
 static char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] =	 { col_05, col_00, col_00 },
@@ -50,8 +59,9 @@ static char *colors[][3]      = {
 	[SchemeCyan]=	 { col_0E, col_00, col_00 }, /* Cyan */
 };
 
+
 /* Xresources file location */
-static const char *xres = "/home/demis/.Xresources";
+//static const char *xres = "/home/demis/.Xresources";
 
 /* tagging */
 static const char *tags[] = { "", "", "", };
@@ -120,7 +130,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	{ MODKEY,             		XK_F5, 	    xrdb,          {.v = NULL} },
+//	{ MODKEY,             		XK_F5, 	    xrdb,          {.v = NULL} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
@@ -131,6 +141,8 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+
+	/* custom keys */
 };
 
 /* button definitions */

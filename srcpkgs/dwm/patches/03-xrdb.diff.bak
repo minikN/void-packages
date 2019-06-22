@@ -86,28 +86,28 @@ index 4465af1..98e9d84 100644
 +    char *type;
 +    XrmValue value;
 +
-+    XRDB_LOAD_COLOR("dwm.color00", col_00);
-+    XRDB_LOAD_COLOR("dwm.color01", col_01);
-+    XRDB_LOAD_COLOR("dwm.color02", col_02);
-+    XRDB_LOAD_COLOR("dwm.color03", col_03);
-+    XRDB_LOAD_COLOR("dwm.color04", col_04);
-+    XRDB_LOAD_COLOR("dwm.color05", col_05);
-+    XRDB_LOAD_COLOR("dwm.color06", col_06);
-+    XRDB_LOAD_COLOR("dwm.color07", col_07);
-+    XRDB_LOAD_COLOR("dwm.color08", col_08);
-+    XRDB_LOAD_COLOR("dwm.color09", col_09);
-+    XRDB_LOAD_COLOR("dwm.color10", col_0A);
-+    XRDB_LOAD_COLOR("dwm.color11", col_0B);
-+    XRDB_LOAD_COLOR("dwm.color12", col_0C);
-+    XRDB_LOAD_COLOR("dwm.color13", col_0D);
-+    XRDB_LOAD_COLOR("dwm.color14", col_0E);
-+    XRDB_LOAD_COLOR("dwm.color15", col_0F);
-+    XRDB_LOAD_COLOR("dwm.color16", col_16);
-+    XRDB_LOAD_COLOR("dwm.color17", col_17);
-+    XRDB_LOAD_COLOR("dwm.color18", col_18);
-+    XRDB_LOAD_COLOR("dwm.color19", col_19);
-+    XRDB_LOAD_COLOR("dwm.color20", col_20);
-+    XRDB_LOAD_COLOR("dwm.color21", col_21);
++    XRDB_LOAD_COLOR("sys.color00", col_00);
++    XRDB_LOAD_COLOR("sys.color01", col_01);
++    XRDB_LOAD_COLOR("sys.color02", col_02);
++    XRDB_LOAD_COLOR("sys.color03", col_03);
++    XRDB_LOAD_COLOR("sys.color04", col_04);
++    XRDB_LOAD_COLOR("sys.color05", col_05);
++    XRDB_LOAD_COLOR("sys.color06", col_06);
++    XRDB_LOAD_COLOR("sys.color07", col_07);
++    XRDB_LOAD_COLOR("sys.color08", col_08);
++    XRDB_LOAD_COLOR("sys.color09", col_09);
++    XRDB_LOAD_COLOR("sys.color10", col_0A);
++    XRDB_LOAD_COLOR("sys.color11", col_0B);
++    XRDB_LOAD_COLOR("sys.color12", col_0C);
++    XRDB_LOAD_COLOR("sys.color13", col_0D);
++    XRDB_LOAD_COLOR("sys.color14", col_0E);
++    XRDB_LOAD_COLOR("sys.color15", col_0F);
++    XRDB_LOAD_COLOR("sys.color16", col_16);
++    XRDB_LOAD_COLOR("sys.color17", col_17);
++    XRDB_LOAD_COLOR("sys.color18", col_18);
++    XRDB_LOAD_COLOR("sys.color19", col_19);
++    XRDB_LOAD_COLOR("sys.color20", col_20);
++    XRDB_LOAD_COLOR("sys.color21", col_21);
 +
 +  }
 +}

@@ -1,0 +1,104 @@
+--- a/dwm.c	2019-06-21 15:27:07.680276077 +0200
++++ b/dwm.c	2019-06-21 17:53:10.153568809 +0200
+@@ -40,6 +40,7 @@
+ #include <X11/extensions/Xinerama.h>
+ #endif /* XINERAMA */
+ #include <X11/Xft/Xft.h>
++#include <X11/Xresource.h>
+ 
+ #include "drw.h"
+ #include "util.h"
+@@ -67,6 +68,19 @@
+ enum { ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle,
+        ClkClientWin, ClkRootWin, ClkLast }; /* clicks */
+ 
++/* Xresources preferences */
++enum resource_type {
++	STRING = 0,
++	INTEGER = 1,
++	FLOAT = 2
++};
++
++typedef struct {
++	char *name;
++	enum resource_type type;
++	void *dst;
++} ResourcePref;
++
+ typedef union {
+ 	int i;
+ 	unsigned int ui;
+@@ -528,6 +542,22 @@
+ 	}
+ }
+ 
++config_init(void)
++{
++	char *resm;
++	XrmDatabase db;
++	ResourcePref *p;
++
++	XrmInitialize();
++	resm = XResourceManagerString(dpy);
++	if (!resm)
++		return;
++
++	db = XrmGetStringDatabase(resm);
++	for (p = resources; p < resources + LENGTH(resources); p++)
++		resource_load(db, p->name, p->type, p->dst);
++}
++
+ void
+ configure(Client *c)
+ {
+@@ -1369,6 +1399,42 @@
+ 	while (XCheckMaskEvent(dpy, EnterWindowMask, &ev));
+ }
+ 
++int
++resource_load(XrmDatabase db, char *name, enum resource_type rtype, void *dst)
++{
++	char **sdst = dst;
++	int *idst = dst;
++	float *fdst = dst;
++
++	char fullname[256];
++	char fullclass[256];
++	char *type;
++	XrmValue ret;
++
++	snprintf(fullname, sizeof(fullname), "%s.%s",
++			"dwm", name);
++	snprintf(fullclass, sizeof(fullclass), "%s.%s",
++			"dwm", name);
++	fullname[sizeof(fullname) - 1] = fullclass[sizeof(fullclass) - 1] = '\0';
++
++	XrmGetResource(db, fullname, fullclass, &type, &ret);
++	if (ret.addr == NULL || strncmp("String", type, 64))
++		return 1;
++
++	switch (rtype) {
++	case STRING:
++		*sdst = ret.addr;
++		break;
++	case INTEGER:
++		*idst = strtoul(ret.addr, NULL, 10);
++		break;
++	case FLOAT:
++		*fdst = strtof(ret.addr, NULL);
++		break;
++	}
++	return 0;
++}
++
+ void
+ run(void)
+ {
+@@ -1592,6 +1658,7 @@
+ 		|LeaveWindowMask|StructureNotifyMask|PropertyChangeMask;
+ 	XChangeWindowAttributes(dpy, root, CWEventMask|CWCursor, &wa);
+ 	XSelectInput(dpy, root, wa.event_mask);
++	config_init();
+ 	grabkeys();
+ 	focus(NULL);
+ }

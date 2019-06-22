@@ -1,0 +1,1 @@
+repository=$HOME/builds/void-packages/hostdir /etc/xbps.d/local.conf
