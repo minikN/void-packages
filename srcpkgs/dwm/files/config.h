@@ -11,30 +11,29 @@ static const char *fonts[]          = {
 				      };
 static const char dmenufont[]    = "Terminus (TTF):size=10";
 
-
 /* Colors get loaded from Xresources */
-static char col_00[]       = "#555555";
-static char col_01[]       = "#000000";
-static char col_02[]       = "#000000";
-static char col_03[]       = "#000000";
-static char col_04[]       = "#000000";
-static char col_05[]       = "#000000";
-static char col_06[]       = "#000000";
-static char col_07[]       = "#000000";
-static char col_08[]       = "#000000";
-static char col_09[]       = "#000000";
-static char col_0A[]       = "#000000";
-static char col_0B[]       = "#000000";
-static char col_0C[]       = "#000000";
-static char col_0D[]       = "#000000";
-static char col_0E[]       = "#000000";
-static char col_0F[]       = "#000000";
-static char col_16[]       = "#000000";
-static char col_17[]       = "#000000";
-static char col_18[]       = "#000000";
-static char col_19[]       = "#000000";
-static char col_20[]       = "#000000";
-static char col_21[]       = "#000000";
+static char col_00[]       = "#222222";
+static char col_01[]       = "#363537";
+static char col_02[]       = "#525053";
+static char col_03[]       = "#69676c";
+static char col_04[]       = "#8b888f";
+static char col_05[]       = "#f7f1ff";
+static char col_06[]       = "#fbf8ff";
+static char col_07[]       = "#ffffff";
+static char col_08[]       = "#fc618d";
+static char col_09[]       = "#fd9353";
+static char col_0A[]       = "#fce566";
+static char col_0B[]       = "#7bd88f";
+static char col_0C[]       = "#5ad4e6";
+static char col_0D[]       = "#5ad4e6";
+static char col_0E[]       = "#948ae3";
+static char col_0F[]       = "#fc618d";
+static char col_16[]       = "#fd9353";
+static char col_17[]       = "#fc618d";
+static char col_18[]       = "#363537";
+static char col_19[]       = "#69676c";
+static char col_20[]       = "#8b888f";
+static char col_21[]       = "#fbf8ff";
 
 static char *colorname[] = {
 	"#000000"
